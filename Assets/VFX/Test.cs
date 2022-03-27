@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using Bonjour.Vision;
+using com.rfilkov.kinect;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.VFX;
 
 public class Test : MonoBehaviour
@@ -13,6 +15,8 @@ public class Test : MonoBehaviour
     public OpticalFlow OpticalFlow;
 
     public OFTrailSystemUpdater update;
+
+    public RawImage bodyRawImage;
     void Start()
     {
         
@@ -21,6 +25,18 @@ public class Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+        if (KinectManager.Instance != null && KinectManager.Instance.sensorDatas.Count > 0 && bodyRawImage.texture == null)
+        {
+            KinectInterop.SensorData sensorData = KinectManager.Instance.sensorDatas[0];
+            Vector3 imageScale = sensorData.depthImageScale;
+            RenderTexture imageTex = sensorData.bodyImageTexture ? sensorData.bodyImageTexture : sensorData.depthImageTexture;
+            bodyRawImage.texture = imageTex;
+
+
+        }
+
         if (VisualEffect != null)
         {
 

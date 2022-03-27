@@ -163,7 +163,7 @@ namespace com.rfilkov.kinect
         // available sensor interfaces
         protected List<DepthSensorInterface> sensorInterfaces = new List<DepthSensorInterface>();
         // the respective SensorData structures
-        protected List<KinectInterop.SensorData> sensorDatas = new List<KinectInterop.SensorData>();
+        public List<KinectInterop.SensorData> sensorDatas = new List<KinectInterop.SensorData>();
 
         // body frame data
         protected ulong lastBodyFrameTime = 0;
