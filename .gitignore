@@ -59,3 +59,22 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+nvrtc64_111_0.dll
+nvrtc-builtins64_111.dll
+nvinfer_plugin.dll
+nvinfer.dll
+myelin64_1.dll
+dnn_model_2_0_op11.onnx
+directml.dll
+cufft64_10.dll
+cudnn_ops_infer64_8.dll
+cudnn_cnn_infer64_8.dll
+cudnn64_8.dll
+cudart64_110.dll
+cublasLt64_11.dll
+cublas64_11.dll
+onnxruntime.dll
+onnxruntime_providers_shared.dll
+onnxruntime_providers_tensorrt.dll
+vcomp140.dll
+/Assets\AzureKinectExamples\SDK\Kinect4AzureSDK\Plugins/onnxruntime.dll
