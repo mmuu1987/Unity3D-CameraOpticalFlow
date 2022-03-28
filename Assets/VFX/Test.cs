@@ -31,8 +31,9 @@ public class Test : MonoBehaviour
         {
             KinectInterop.SensorData sensorData = KinectManager.Instance.sensorDatas[0];
             Vector3 imageScale = sensorData.depthImageScale;
-            RenderTexture imageTex = sensorData.bodyImageTexture ? sensorData.bodyImageTexture : sensorData.depthImageTexture;
-            bodyRawImage.texture = imageTex;
+            //RenderTexture imageTex = sensorData.colorImageTexture;
+            bodyRawImage.texture = sensorData.colorImageTexture;
+            //bodyRawImage.texture = sensorData.bodyImageTexture;
 
 
         }

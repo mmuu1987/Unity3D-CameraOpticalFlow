@@ -211,7 +211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &91904792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,8 +231,8 @@ MonoBehaviour:
   getInfraredFrames: 0
   getPoseFrames: 0
   getBodyFrames: 3
-  syncDepthAndColor: 1
-  syncBodyAndDepth: 1
+  syncDepthAndColor: 0
+  syncBodyAndDepth: 0
   minUserDistance: 0
   maxUserDistance: 0
   maxLeftRightDistance: 0
@@ -245,7 +245,7 @@ MonoBehaviour:
   playerCalibrationPose: 0
   userManager: {fileID: 0}
   gestureManager: {fileID: 0}
-  displayImages: 01010000
+  displayImages: 
   displayImageWidthPercent: 0.2
   statusInfoText: {fileID: 0}
   consoleLogMessages: 1
@@ -1372,7 +1372,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889452961}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c21a6d3ef9c8e4e4eb235ab71f2ff1ac, type: 3}
   m_Name: 
@@ -1435,7 +1435,7 @@ MonoBehaviour:
   scale: {x: 10, y: 10}
   blurType: 13
   blurSize: 100
-  sourceToAnalyze: {fileID: 8400000, guid: 63b85b8b6b37bc24894bc8ae88daa1dc, type: 2}
+  sourceToAnalyze: {fileID: 8400000, guid: a235e226ba9510f4993e7eacb8851e85, type: 2}
   mirrorHor: 0
   current: {fileID: 0}
   previous: {fileID: 0}
